@@ -111,7 +111,6 @@
 				292EDA6DE7A8671B3E86A330 /* Pods-pilot-ci-cdTests.debug.xcconfig */,
 				B9B927A2B786A1F4A28E5D60 /* Pods-pilot-ci-cdTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -551,6 +550,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 466F6KQATY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "pilot-ci-cd/Info.plist";
