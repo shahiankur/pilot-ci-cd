@@ -36,10 +36,15 @@ class ViewController: UIViewController {
 
     @IBAction func calculateButton_TouchUpInside(_ sender: Any) {
 //        Crashes.generateTestCrash()
-        let currentAge = ageTextField.text ?? ""
-        let retirementAge = retirementAgeTextField.text ?? ""
+        let current_age : Int? = Int(ageTextField.text!)
+        let planned_retirement_age : Int? = Int(retirementAgeTextField.text!)
+        let monthly_investment : Float? = Float(monthlyInvestmentsTextField.text!)
+        let current_savings : Float? = Float(savingsTextField.text!)
+        let interest_rate : Float? = Float(interestRateTextField.text!)
         
-        let properties = ["currentAge": currentAge, "retirementAge": retirementAge]
+        resultLabel.text = "If you save $\(monthly_investment!) every month for \(planned_retirement_age! - current_age!) years, and invest that money plus your current investment of $\(current_savings!) at a \(interest_rate!)% anual interest rate, you will have $X by the time you are \(planned_retirement_age!)"
+        
+        let properties = ["currentAge": String(current_age!), "retirementAge": String(planned_retirement_age!)]
         
         Analytics.trackEvent("calculate_retirement_button_tapped", withProperties: properties)
     }
