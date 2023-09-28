@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("for testing of app transfer")
+        print("for testing of app transfer")
     }
     
     override func viewDidAppear(_ animated: Bool) {
