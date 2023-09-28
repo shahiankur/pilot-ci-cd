@@ -1,8 +1,9 @@
 //
 //  ViewController.swift
-//  pilot-ci-cd
+//  RetirementCalculator
 //
-//  Created by Ankur Shahi on 26/09/23.
+//  Created by Eduardo Rosas on 8/19/19.
+//  Copyright © 2019 Eduardo Rosas. All rights reserved.
 //
 
 import UIKit
@@ -24,25 +25,29 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         if Crashes.hasCrashedInLastSession {
-            let alert = UIAlertController(title: "Oops", message: "An error might have occured", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel))
-            self.present(alert, animated: true)
+            let alert = UIAlertController(title: "Oops", message: "Sorry about that, an error occured.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "It's cool", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
-        Analytics.trackEvent("navigated_to_calculate_retirement_screen")
+        
+        Analytics.trackEvent("navigated_to_calculator")
     }
 
-
     @IBAction func calculateButton_TouchUpInside(_ sender: Any) {
-//        Crashes.generateTestCrash()
-        let currentAge = ageTextField.text ?? ""
-        let retirementAge = retirementAgeTextField.text ?? ""
+        // MSCrashes.generateTestCrash()
+        let current_age : Int? = Int(ageTextField.text!)
+        let planned_retirement_age : Int? = Int(retirementAgeTextField.text!)
+        let monthly_investment : Float? = Float(monthlyInvestmentsTextField.text!)
+        let current_savings : Float? = Float(savingsTextField.text!)
+        let interest_rate : Float? = Float(interestRateTextField.text!)
         
-        let properties = ["currentAge": currentAge, "retirementAge": retirementAge]
+        resultLabel.text = "If you save $\(monthly_investment!) every month for \(planned_retirement_age! - current_age!) years, and invest that money plus your current investment of $\(current_savings!) at a \(interest_rate!)% anual interest rate, you will have $X by the time you are \(planned_retirement_age!)"
         
-        Analytics.trackEvent("calculate_retirement_button_tapped", withProperties: properties)
+        let properties = ["current_age": String(current_age!),
+                          "planned_retirement_age": String(planned_retirement_age!)]
+        
+        Analytics.trackEvent("calculate_retirement_amount", withProperties: properties)
     }
     
 }
-
