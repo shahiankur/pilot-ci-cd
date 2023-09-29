@@ -51,9 +51,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter some values to calculate your retirement amount." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FC-hN-UsW">
-                                <rect key="frame" x="20" y="307" width="353" height="82"/>
+                                <rect key="frame" x="20" y="307" width="353" height="202"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="YXD-0W-l0s"/>
+                                    <constraint firstAttribute="height" constant="202" id="i9Z-wD-oZY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Da-YG-BvE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-160" y="54"/>
+            <point key="canvasLocation" x="-161.06870229007632" y="53.521126760563384"/>
         </scene>
     </scenes>
 </document>
