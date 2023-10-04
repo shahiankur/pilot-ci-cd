@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("for testing of app transfer")
+        print("for testing of gitlab pipelines execution")
     }
     
     override func viewDidAppear(_ animated: Bool) {
