@@ -17,32 +17,38 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Monthly investments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5PC-br-F8h">
                                 <rect key="frame" x="20" y="59" width="353" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="monthlyInvestments"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your current age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xbp-In-18x">
                                 <rect key="frame" x="20" y="101" width="353" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="currentAge"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your planned retirement age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GaV-iJ-sXQ">
                                 <rect key="frame" x="20" y="143" width="353" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="retirementAge"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Average interest rate of investments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OFV-6s-hHf">
                                 <rect key="frame" x="20" y="185" width="353" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="rateOfInterest"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Current savings" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZHZ-VO-VlL">
                                 <rect key="frame" x="20" y="227" width="353" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="currentSavings"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tC0-Np-dXG">
                                 <rect key="frame" x="20" y="269" width="353" height="30"/>
                                 <color key="backgroundColor" red="0.26274509800000001" green="0.57254901960000004" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="calculateRetirementAmountButton"/>
                                 <state key="normal" title="Calculate retirement amount">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -52,6 +58,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter some values to calculate your retirement amount." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FC-hN-UsW">
                                 <rect key="frame" x="20" y="307" width="353" height="202"/>
+                                <accessibility key="accessibilityConfiguration" identifier="resultLabel"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="202" id="i9Z-wD-oZY"/>
                                 </constraints>
