@@ -1,14 +1,12 @@
 stages:
-    - build 
-build:
-    stage: build
-    script:
+  - build
+
+build_project:
+  stage: build
+  script:
         - echo "Building"
         - xcodebuild clean -workspace pilot-ci-cd.xcworkspace -scheme pilot-ci-cd | xcpretty
         - xcodebuild test -workspace pilot-ci-cd.xcworkspace -scheme pilot-ci-cd -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.4' | xcpretty -s
-    tags:
-        - CI
-        - SSH
-    artifacts:
-        paths:
-            - build/
+  tags:
+    - CI
+    - SSH
