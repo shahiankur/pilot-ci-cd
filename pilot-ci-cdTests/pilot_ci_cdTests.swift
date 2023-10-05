@@ -39,6 +39,20 @@ final class pilot_ci_cdTests: XCTestCase {
         XCTAssertEqual(rateOfInterest.text, "")
         XCTAssertEqual(currentSavings.text, "")
     }
+    
+    func testViewController_whenCreated_hasRequiredFieldsEmpty_Failed() throws {
+        let mothlyInvestments = try XCTUnwrap(sut.monthlyInvestmentsTextField)
+        let currentAge = try XCTUnwrap(sut.ageTextField)
+        let retirementAge = try XCTUnwrap(sut.retirementAgeTextField)
+        let rateOfInterest = try XCTUnwrap(sut.interestRateTextField)
+        let currentSavings = try XCTUnwrap(sut.savingsTextField)
+        
+        XCTAssertEqual(mothlyInvestments.text, "mothlyInvestments")
+        XCTAssertEqual(currentAge.text, "currentAge")
+        XCTAssertEqual(retirementAge.text, "retirementAge")
+        XCTAssertEqual(rateOfInterest.text, "rateOfInterest")
+        XCTAssertEqual(currentSavings.text, "currentSavings")
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
