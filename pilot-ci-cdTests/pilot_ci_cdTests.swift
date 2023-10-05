@@ -10,20 +10,34 @@ import XCTest
 
 final class pilot_ci_cdTests: XCTestCase {
 
+    var storyboard: UIStoryboard!
+    var sut: ViewController!
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        storyboard = UIStoryboard(name: "Main", bundle: nil)
+        sut = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        sut.loadViewIfNeeded()
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        storyboard = nil
+        sut = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testViewController_whenCreated_hasRequiredFieldsEmpty() throws {
+        let mothlyInvestments = try XCTUnwrap(sut.monthlyInvestmentsTextField)
+        let currentAge = try XCTUnwrap(sut.ageTextField)
+        let retirementAge = try XCTUnwrap(sut.retirementAgeTextField)
+        let rateOfInterest = try XCTUnwrap(sut.interestRateTextField)
+        let currentSavings = try XCTUnwrap(sut.savingsTextField)
+        
+        XCTAssertEqual(mothlyInvestments.text, "")
+        XCTAssertEqual(currentAge.text, "")
+        XCTAssertEqual(retirementAge.text, "")
+        XCTAssertEqual(rateOfInterest.text, "")
+        XCTAssertEqual(currentSavings.text, "")
     }
 
     func testPerformanceExample() throws {
