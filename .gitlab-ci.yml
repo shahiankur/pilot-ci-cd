@@ -5,7 +5,7 @@ build:
     script:
         - echo "Building"
         - xcodebuild clean -workspace pilot-ci-cd.xcworkspace -scheme pilot-ci-cd | xcpretty
-        - xcodebuild test -workspace pilot-ci-cd.xcworkspace -scheme pilot-ci-cd -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.3' | xcpretty -s
+        - xcodebuild test -workspace pilot-ci-cd.xcworkspace -scheme pilot-ci-cd -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.4' | xcpretty -s
     tags:
         - CI
         - SSH
