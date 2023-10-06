@@ -1,6 +1,6 @@
 stages:
-  - build
   - test
+  - build
 
 variables:
   XCODE_WORKSPACE: "pilot-ci-cd.xcworkspace"
