@@ -14,7 +14,7 @@ before_script:
 build:
   stage: build
   script:
-    - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" clean build | xcpretty
+    - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" clean build | xcpretty -s
   tags:
   - CI
   - SSH
@@ -22,7 +22,7 @@ build:
 test:
   stage: test
   script:
-    - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" test | xcpretty
+    - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" test | xcpretty -s
   tags:
   - CI
   - SSH
