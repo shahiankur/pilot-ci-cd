@@ -8,9 +8,6 @@ variables:
   XCODE_SDK: "iphonesimulator"
   XCODE_DESTINATION: "platform=iOS Simulator,OS=16.4,name=iPhone 14 Pro"
 
-before_script:
-  - sudo gem install xcpretty
-
 build:
   stage: build
   script:
