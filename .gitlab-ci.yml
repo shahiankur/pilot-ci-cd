@@ -1,12 +1,28 @@
 stages:
   - build
+  - test
 
-project:
+variables:
+  XCODE_WORKSPACE: "pilot-ci-cd.xcworkspace"
+  XCODE_SCHEME: "pilot-ci-cd"
+  XCODE_SDK: "iphonesimulator"
+  XCODE_DESTINATION: "platform=iOS Simulator,OS=16.4,name=iPhone 14 Pro"
+
+before_script:
+  - sudo gem install xcpretty
+
+build:
   stage: build
   script:
-        - echo "Building"
-        - xcodebuild clean -workspace pilot-ci-cd.xcworkspace -scheme pilot-ci-cd | xcpretty
-        - xcodebuild test -workspace pilot-ci-cd.xcworkspace -scheme pilot-ci-cd -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.4' | xcpretty -s
+    - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" clean build | xcpretty -s
   tags:
-    - CI
-    - SSH
+  - CI
+  - SSH
+
+test:
+  stage: test
+  script:
+    - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" test | xcpretty -s
+  tags:
+  - CI
+  - SSH
