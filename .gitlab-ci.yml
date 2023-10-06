@@ -1,7 +1,7 @@
 stages:
   - build
 
-build_project:
+project:
   stage: build
   script:
         - echo "Building"
