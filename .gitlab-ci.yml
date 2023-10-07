@@ -1,7 +1,6 @@
 stages:
   - build
   - test
-  - testAgain
 
 variables:
   XCODE_WORKSPACE: "pilot-ci-cd.xcworkspace"
@@ -25,7 +24,7 @@ test:
   - CI
   - SSH
 test Again:
-  stage: testAgain
+  stage: test
   script:
     - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" test | xcpretty -s
   tags:
