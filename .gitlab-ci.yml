@@ -13,6 +13,8 @@ build:
   script:
     # - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" clean build | xcpretty -s
     - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" clean build | tee build.log
+  only: 
+    - master
   artifacts:
     paths:
       - build.log
