@@ -8,13 +8,15 @@ variables:
   XCODE_SDK: "iphonesimulator"
   XCODE_DESTINATION: "platform=iOS Simulator,OS=16.4,name=iPhone 14 Pro"
 
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - Pods/
 build:
   stage: build
   script:
     # - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" clean build | xcpretty -s
     - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" clean build | tee build.log
-  only: 
-    - master
   artifacts:
     paths:
       - build.log
@@ -22,7 +24,7 @@ build:
   - CI
   - SSH
 
-.test:
+test:
   stage: test
   script:
     - xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" -sdk "$XCODE_SDK" -destination "$XCODE_DESTINATION" test | xcpretty -s
