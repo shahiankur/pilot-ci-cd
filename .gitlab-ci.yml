@@ -35,6 +35,9 @@ swiftlint:
   only:
     - merge_requests
     - dev
+  tags:
+  - CI
+  - SSH
 
 test:
   stage: test
