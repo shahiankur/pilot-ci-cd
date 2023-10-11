@@ -8,7 +8,7 @@
 import XCTest
 @testable import pilot_ci_cd
 
-final class pilot_ci_cdTests: XCTestCase {
+final class PilotCiCdTests: XCTestCase {
 
     var storyboard: UIStoryboard!
     var sut: ViewController!

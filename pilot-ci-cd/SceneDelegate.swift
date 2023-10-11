@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Create and set the root view controller
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
         window.rootViewController = viewController
         
         // Make the window visible
