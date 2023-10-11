@@ -66,4 +66,35 @@ class ViewController: UIViewController {
         Analytics.trackEvent("calculate_retirement_amount", withProperties: properties)
     }
     
+    func test() {
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")
+        print("a")  
+    }
+    
 }
