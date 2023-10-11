@@ -1,5 +1,6 @@
 stages:
   - build
+  - lint
   - test
   - production
 
@@ -26,6 +27,14 @@ build:
   tags:
   - CI
   - SSH
+
+swiftlint:
+  stage: lint
+  script:
+    - swiftlint
+  only:
+    - merge_requests
+    - dev
 
 test:
   stage: test
