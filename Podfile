@@ -9,7 +9,7 @@ target 'pilot-ci-cd' do
 
 	pod 'AppCenter/Analytics'
 	pod 'AppCenter/Crashes'
-	#pod ‘SwiftLint’
+	pod ‘SwiftLint’
   target 'pilot-ci-cdTests' do
     inherit! :search_paths
     # Pods for testing
