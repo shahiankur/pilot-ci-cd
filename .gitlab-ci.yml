@@ -1,6 +1,5 @@
 stages:
-  - build
-  - lint
+  - dev
   - test
   - production
 
