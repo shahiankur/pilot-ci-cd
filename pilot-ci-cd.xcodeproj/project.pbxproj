@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16789B68D08818D67F2DFD0B /* Pods_pilot_ci_cdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A37B3645A39EE584F68CD5 /* Pods_pilot_ci_cdTests.framework */; };
 		179B8799465E2EC2F22736B5 /* Pods_pilot_ci_cd_pilot_ci_cdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5A9628AAF1EAE04F5EC986 /* Pods_pilot_ci_cd_pilot_ci_cdUITests.framework */; };
-		72E8BB1895A8DD2E07B43AD2 /* Pods_pilot_ci_cdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A37B3645A39EE584F68CD5 /* Pods_pilot_ci_cdTests.framework */; };
 		B6494107731E260EB4925AF3 /* Pods_pilot_ci_cd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F9FDBE377BD2A2B48B028C /* Pods_pilot_ci_cd.framework */; };
 		F3D2A8B32AC32D10001F1B2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D2A8B22AC32D10001F1B2B /* AppDelegate.swift */; };
 		F3D2A8B52AC32D10001F1B2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D2A8B42AC32D10001F1B2B /* SceneDelegate.swift */; };
@@ -76,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72E8BB1895A8DD2E07B43AD2 /* Pods_pilot_ci_cdTests.framework in Frameworks */,
+				16789B68D08818D67F2DFD0B /* Pods_pilot_ci_cdTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
