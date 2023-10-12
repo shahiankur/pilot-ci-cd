@@ -28,7 +28,7 @@ build:
   - CI
   - SSH
   
-  swiftlint:
+swiftlint:
   stage: lint
   script:
     - pod install --repo-update
