@@ -6,16 +6,10 @@ target 'pilot-ci-cd' do
   use_frameworks!
 
   # Pods for pilot-ci-cd
-
 	pod 'AppCenter/Analytics'
 	pod 'AppCenter/Crashes'
   target 'pilot-ci-cdTests' do
     inherit! :search_paths
     # Pods for testing
   end
-
-  target 'pilot-ci-cdUITests' do
-    # Pods for testing
-  end
-
 end

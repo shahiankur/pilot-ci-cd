@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		16789B68D08818D67F2DFD0B /* Pods_pilot_ci_cdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A37B3645A39EE584F68CD5 /* Pods_pilot_ci_cdTests.framework */; };
-		179B8799465E2EC2F22736B5 /* Pods_pilot_ci_cd_pilot_ci_cdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5A9628AAF1EAE04F5EC986 /* Pods_pilot_ci_cd_pilot_ci_cdUITests.framework */; };
 		B6494107731E260EB4925AF3 /* Pods_pilot_ci_cd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F9FDBE377BD2A2B48B028C /* Pods_pilot_ci_cd.framework */; };
 		F3D2A8B32AC32D10001F1B2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D2A8B22AC32D10001F1B2B /* AppDelegate.swift */; };
 		F3D2A8B52AC32D10001F1B2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D2A8B42AC32D10001F1B2B /* SceneDelegate.swift */; };
@@ -17,19 +16,10 @@
 		F3D2A8BC2AC32D13001F1B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D2A8BB2AC32D13001F1B2B /* Assets.xcassets */; };
 		F3D2A8BF2AC32D13001F1B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D2A8BD2AC32D13001F1B2B /* LaunchScreen.storyboard */; };
 		F3D2A8CA2AC32D13001F1B2B /* pilot_ci_cdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D2A8C92AC32D13001F1B2B /* pilot_ci_cdTests.swift */; };
-		F3D2A8D42AC32D14001F1B2B /* pilot_ci_cdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D2A8D32AC32D14001F1B2B /* pilot_ci_cdUITests.swift */; };
-		F3D2A8D62AC32D14001F1B2B /* pilot_ci_cdUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D2A8D52AC32D14001F1B2B /* pilot_ci_cdUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F3D2A8C62AC32D13001F1B2B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3D2A8A72AC32D10001F1B2B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3D2A8AE2AC32D10001F1B2B;
-			remoteInfo = "pilot-ci-cd";
-		};
-		F3D2A8D02AC32D14001F1B2B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F3D2A8A72AC32D10001F1B2B /* Project object */;
 			proxyType = 1;
@@ -57,9 +47,6 @@
 		F3D2A8C02AC32D13001F1B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3D2A8C52AC32D13001F1B2B /* pilot-ci-cdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pilot-ci-cdTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D2A8C92AC32D13001F1B2B /* pilot_ci_cdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pilot_ci_cdTests.swift; sourceTree = "<group>"; };
-		F3D2A8CF2AC32D14001F1B2B /* pilot-ci-cdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pilot-ci-cdUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3D2A8D32AC32D14001F1B2B /* pilot_ci_cdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pilot_ci_cdUITests.swift; sourceTree = "<group>"; };
-		F3D2A8D52AC32D14001F1B2B /* pilot_ci_cdUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pilot_ci_cdUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA88594FBB09504BC8F506A2 /* Pods-pilot-ci-cd-pilot-ci-cdUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pilot-ci-cd-pilot-ci-cdUITests.debug.xcconfig"; path = "Target Support Files/Pods-pilot-ci-cd-pilot-ci-cdUITests/Pods-pilot-ci-cd-pilot-ci-cdUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,14 +64,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				16789B68D08818D67F2DFD0B /* Pods_pilot_ci_cdTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3D2A8CC2AC32D14001F1B2B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				179B8799465E2EC2F22736B5 /* Pods_pilot_ci_cd_pilot_ci_cdUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +98,6 @@
 			children = (
 				F3D2A8B12AC32D10001F1B2B /* pilot-ci-cd */,
 				F3D2A8C82AC32D13001F1B2B /* pilot-ci-cdTests */,
-				F3D2A8D22AC32D14001F1B2B /* pilot-ci-cdUITests */,
 				F3D2A8B02AC32D10001F1B2B /* Products */,
 				CDC7453C67AB01FC3B93B2CE /* Pods */,
 				B1548AE0AAB881F50AFF073C /* Frameworks */,
@@ -131,7 +109,6 @@
 			children = (
 				F3D2A8AF2AC32D10001F1B2B /* pilot-ci-cd.app */,
 				F3D2A8C52AC32D13001F1B2B /* pilot-ci-cdTests.xctest */,
-				F3D2A8CF2AC32D14001F1B2B /* pilot-ci-cdUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,15 +133,6 @@
 				F3D2A8C92AC32D13001F1B2B /* pilot_ci_cdTests.swift */,
 			);
 			path = "pilot-ci-cdTests";
-			sourceTree = "<group>";
-		};
-		F3D2A8D22AC32D14001F1B2B /* pilot-ci-cdUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F3D2A8D32AC32D14001F1B2B /* pilot_ci_cdUITests.swift */,
-				F3D2A8D52AC32D14001F1B2B /* pilot_ci_cdUITestsLaunchTests.swift */,
-			);
-			path = "pilot-ci-cdUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,25 +175,6 @@
 			productReference = F3D2A8C52AC32D13001F1B2B /* pilot-ci-cdTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F3D2A8CE2AC32D14001F1B2B /* pilot-ci-cdUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F3D2A8DF2AC32D14001F1B2B /* Build configuration list for PBXNativeTarget "pilot-ci-cdUITests" */;
-			buildPhases = (
-				11363D3E438DAD433A2B5654 /* [CP] Check Pods Manifest.lock */,
-				F3D2A8CB2AC32D14001F1B2B /* Sources */,
-				F3D2A8CC2AC32D14001F1B2B /* Frameworks */,
-				F3D2A8CD2AC32D14001F1B2B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F3D2A8D12AC32D14001F1B2B /* PBXTargetDependency */,
-			);
-			name = "pilot-ci-cdUITests";
-			productName = "pilot-ci-cdUITests";
-			productReference = F3D2A8CF2AC32D14001F1B2B /* pilot-ci-cdUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,10 +189,6 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					F3D2A8C42AC32D13001F1B2B = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = F3D2A8AE2AC32D10001F1B2B;
-					};
-					F3D2A8CE2AC32D14001F1B2B = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = F3D2A8AE2AC32D10001F1B2B;
 					};
@@ -264,7 +209,6 @@
 			targets = (
 				F3D2A8AE2AC32D10001F1B2B /* pilot-ci-cd */,
 				F3D2A8C42AC32D13001F1B2B /* pilot-ci-cdTests */,
-				F3D2A8CE2AC32D14001F1B2B /* pilot-ci-cdUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,38 +231,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3D2A8CD2AC32D14001F1B2B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		11363D3E438DAD433A2B5654 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pilot-ci-cd-pilot-ci-cdUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		ABDA14A701BDBF6EF8178D53 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,15 +299,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3D2A8CB2AC32D14001F1B2B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3D2A8D62AC32D14001F1B2B /* pilot_ci_cdUITestsLaunchTests.swift in Sources */,
-				F3D2A8D42AC32D14001F1B2B /* pilot_ci_cdUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -400,11 +306,6 @@
 			isa = PBXTargetDependency;
 			target = F3D2A8AE2AC32D10001F1B2B /* pilot-ci-cd */;
 			targetProxy = F3D2A8C62AC32D13001F1B2B /* PBXContainerItemProxy */;
-		};
-		F3D2A8D12AC32D14001F1B2B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F3D2A8AE2AC32D10001F1B2B /* pilot-ci-cd */;
-			targetProxy = F3D2A8D02AC32D14001F1B2B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -643,44 +544,6 @@
 			};
 			name = Release;
 		};
-		F3D2A8E02AC32D14001F1B2B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA88594FBB09504BC8F506A2 /* Pods-pilot-ci-cd-pilot-ci-cdUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 466F6KQATY;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ankurshahi.pilot-ci-cdUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "pilot-ci-cd";
-			};
-			name = Debug;
-		};
-		F3D2A8E12AC32D14001F1B2B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA4A13876C6E563867E41E30 /* Pods-pilot-ci-cd-pilot-ci-cdUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 466F6KQATY;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ankurshahi.pilot-ci-cdUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "pilot-ci-cd";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -707,15 +570,6 @@
 			buildConfigurations = (
 				F3D2A8DD2AC32D14001F1B2B /* Debug */,
 				F3D2A8DE2AC32D14001F1B2B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F3D2A8DF2AC32D14001F1B2B /* Build configuration list for PBXNativeTarget "pilot-ci-cdUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3D2A8E02AC32D14001F1B2B /* Debug */,
-				F3D2A8E12AC32D14001F1B2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
