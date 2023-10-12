@@ -1,5 +1,6 @@
 stages:
   - build
+  - lint
   - test
   - production
 
@@ -23,6 +24,18 @@ build:
   artifacts:
     paths:
       - build.log
+  tags:
+  - CI
+  - SSH
+
+swiftlint:
+  stage: lint
+  script:
+    - pod install --repo-update
+    - Pods/SwiftLint/swiftlint
+    - xcodebuild clean build -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO" | xcpretty --c
+  only:
+    - merge_requests
   tags:
   - CI
   - SSH
