@@ -13,8 +13,8 @@ cache:
   key: ${CI_COMMIT_REF_SLUG}
   paths:
     - Pods/
-build:
-  stage: build
+dev:
+  stage: dev
   environment: 
     name: build
   script:
