@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-pilot-ci-cd-pilot-ci-cdUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-pilot-ci-cd.xcscheme</key>
 		<dict>
 			<key>isShown</key>

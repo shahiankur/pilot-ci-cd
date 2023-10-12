@@ -1,6 +1,0 @@
-framework module Pods_pilot_ci_cd_pilot_ci_cdUITests {
-  umbrella header "Pods-pilot-ci-cd-pilot-ci-cdUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
