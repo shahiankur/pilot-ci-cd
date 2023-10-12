@@ -4,22 +4,18 @@ PODS:
   - AppCenter/Core (5.0.4)
   - AppCenter/Crashes (5.0.4):
     - AppCenter/Core
-  - SwiftLint (0.53.0)
 
 DEPENDENCIES:
   - AppCenter/Analytics
   - AppCenter/Crashes
-  - SwiftLint
 
 SPEC REPOS:
   trunk:
     - AppCenter
-    - SwiftLint
 
 SPEC CHECKSUMS:
   AppCenter: 85c92db0759d2792a65eb61d6842d2e86611a49a
-  SwiftLint: 5ce4d6a8ff83f1b5fd5ad5dbf30965d35af65e44
 
-PODFILE CHECKSUM: 98d21001bde8ff3aa014d6ec64f18316059c4b04
+PODFILE CHECKSUM: 0e81b7ddba943df4b5c9bb7c74a28d53d227083f
 
 COCOAPODS: 1.10.2
