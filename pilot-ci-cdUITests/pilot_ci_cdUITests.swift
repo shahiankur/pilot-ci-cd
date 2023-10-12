@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class pilot_ci_cdUITests: XCTestCase {
+final class PilotCiCdUITests: XCTestCase {
 
     var app: XCUIApplication!
     var monthlyInvestments: XCUIElement!
